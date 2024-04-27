@@ -7,4 +7,4 @@
 ]</code></pre></div></div><div class="odoc-spec"><div class="spec value anchored" id="val-script"><a href="#val-script" class="anchor"></a><code><span><span class="keyword">val</span> script : <a href="../index.html#type-node">node</a></span></code></div><div class="spec-doc"><p>(2) Put this inside your <code>head</code>:</p><pre class="language-ocaml"><code>head [] [
   Livereload.script;
   (* ... *)
-]</code></pre></div></div><p>(3) And run the server with environment variable <code>ENV=dev</code>.</p><p><b>⚠️ If this env var is not set, then livereload is turned off.</b> This means that the <code>route</code> will respond with <code>404</code> status and the script will be omitted from the rendered HTML.</p></div></body></html>
+]</code></pre></div></div><p>(3) And run the server with environment variable <code>LIVERELOAD=1</code>.</p><p><b>⚠️ If this env var is not set, then livereload is turned off.</b> This means that the <code>route</code> will respond with <code>404</code> status and the script will be omitted from the rendered HTML.</p></div></body></html>
